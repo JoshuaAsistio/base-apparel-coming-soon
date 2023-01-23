@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo {
+  width: 26.66666666666667vw;
+  height: 3.717472118959108;
+  margin-left: 33px;
+}
+
+.hero-image {
+  width: 100vw;
+  height: 46.46840148698885vh;
+  background-image: url("images/hero-mobile.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+}
+
+.coming-soon {
+  padding: 33px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    360deg,
+    hsl(0, 74%, 74%) 5px,
+    hsl(0, 80%, 86%) 5px,
+    hsl(0, 100%, 98%),
+    hsl(0, 0%, 100%)
+  );
+}
+
+.coming-soon h1 {
+  font-size: 1.75rem;
+  letter-spacing: 1.125rem;
+  text-align: center;
+  color: hsl(0, 6%, 24%);
+}
+
+.coming-soon h1 span {
+  font-weight: 100;
+  color: hsl(0, 36%, 70%);
+}
+
+.coming-soon__description {
+  font-size: 1rem;
+  color: hsl(0, 36%, 70%);
+  text-align: center;
+  margin-top: 30px;
+}
+
+form {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  height: 8.736059479553903vh;
+  border-radius: 30px;
+  border: 1px solid hsl(0, 36%, 70%);
+  padding-left: 25px;
+  font-size: 1rem;
+  color: hsl(0, 36%, 70%);
+}
+
+.error-img {
+  width: 24px;
+  height: 24px;
+  margin-left: -50px;
+}
+
+form button {
+  margin-left: 7.5px;
+  width: 17.06666666666667vw;
+  height: 8.736059479553903vh;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(0, 93%, 68%);
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+.error-msg {
+  color: hsl(0, 93%, 68%);
+}
+
+br {
+  display: none;
+}
+
+@media screen and (min-width: 538px) {
+  br {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .logo {
+    width: 10.97222222222222vw;
+    height: 5.025125628140704vh;
+    margin-top: 10.88777219430486vh;
+    margin-left: 12.36111111111111vw;
+  }
+
+  body {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      hsl(0, 0%, 100%),
+      hsl(0, 100%, 98%),
+      hsl(0, 80%, 86%),
+      hsl(0, 74%, 74%)
+    );
+  }
+
+  .hero-image {
+    width: 42.36111111111111vw;
+    height: 100vh;
+    background-image: url("images/hero-desktop.jpg");
+    float: right;
+    margin-top: 0;
+  }
+
+  .coming-soon {
+    padding-left: 12.36111111111111vw;
+    background: none;
+  }
+
+  .coming-soon h1,
+  .coming-soon__description {
+    text-align: left;
+  }
+
+  .coming-soon h1 {
+    margin-top: 5.862646566164154vh;
+  }
+
+  .coming-soon__description {
+    margin-top: 7.202680067001675;
+  }
+
+  form input {
+    width: 21.52777777777778vw;
+    margin-top: 2.093802345058626vh;
+  }
+
+  form button {
+    width: 6.944444444444444vw;
+    height: 9.045226130653266vh;
+    margin-left: 0.2083333333333333vw;
+    margin-top: 1.675041876046901vh;
+  }
+
+  .error-img {
+    margin-left: -30px;
+    margin-top: 1.675041876046901vh;
+    width: 1.666666666666667vw;
+    height: 4.020100502512563vh;
+  }
+
+  form {
+    padding-bottom: 0;
+  }
+
+  form button img {
+    width: 0.6944444444444444vw;
+    height: 3.350083752093802vh;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .coming-soon h1 {
+    font-size: 5rem;
+  }
+
+  .coming-soon__description,
+  .error-msg,
+  form input {
+    font-size: 2rem;
+  }
+}
